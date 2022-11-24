@@ -1,0 +1,108 @@
+.login-outer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  background: linear-gradient(
+    to right,
+    rgba(57, 11, 71, 0.9),
+    rgba(93, 103, 126, 0.9)
+  );
+}
+
+.login-image {
+  height: 325px;
+  margin-right: 100px;
+}
+@media screen and (max-width: 767px) {
+  .login-image {
+    display: none;
+  }
+}
+
+.login-logo {
+  height: 50px;
+  margin: 15px;
+}
+
+.login-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 16px 0px #756e62fb;
+  padding: 20px;
+  margin: 20px;
+  /* background: rgba(255, 255, 255, 0.25); */
+  /* box-shadow: 0 8px 32px 0 rgba(88, 94, 179, 0.37); */
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  /* border-radius: 10px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 15px;
+  width: 25vw;
+  background-color: rgba(212, 207, 207, 0.151);
+}
+@media screen and (max-width: 767px) {
+  .login-inner-container {
+    width: 75vw;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+.form-label {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+  color: rgb(202, 216, 230);
+  margin-bottom: 0px;
+}
+.form-input {
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 3px;
+  border-width: 1px;
+  background-color: rgb(202, 216, 230);
+  border-style: none;
+  font-size: 12px;
+  cursor: pointer;
+  outline-style: none;
+}
+
+.submit-button {
+  margin: 10px 0px 10px 0px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(152, 106, 27);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 15px;
+  font-family: 'roboto';
+}
+
+.login-button {
+  width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(152, 106, 27);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 8px;
+  font-size: 15px;
+  font-family: 'roboto';
+}
+
+.errorMsg {
+  margin: 0px;
+  color: red;
+  font-size: 12px;
+}
